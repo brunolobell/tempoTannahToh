@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Aba do Mestre</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#header').load("header.html");
+				$('#footer').load("footer.html");
+			});
+		</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+		</style>
+  </head>
+  <body>		
+		<div id="header"></div>
+		<div id="Tormenta"></div>
+		<div class="pergaminho">
+			<div class="box">
+				<fieldset>
+					<legend>Bem-vindo, Jovem Mestre!</legend>
+                    <div style="display: grid; grid-template-columns: 50% 50%; max-width: 100%;	text-align: justify;"></div>          
+					<table class="redTable">
+									<thead>
+									<tr>
+									<th>head1</th>
+									<th>head2</th>
+									<th>head3</th>
+									<th>head4</th>
+									<th>head5</th>
+									<th>head6</th>
+									<th>head7</th>
+									</tr>
+									</thead>
+									<tfoot>
+									<tr>
+									<td colspan="7">
+									<div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+									</td>
+									</tr>
+									</tfoot>
+									<tbody>
+									<tr>
+									<td>cell1_1</td><td>cell2_1</td><td>cell3_1</td><td>cell4_1</td><td>cell5_1</td><td>cell6_1</td><td>cell7_1</td></tr>
+									<tr>
+									<td>cell1_2</td><td>cell2_2</td><td>cell3_2</td><td>cell4_2</td><td>cell5_2</td><td>cell6_2</td><td>cell7_2</td></tr>
+									<tr>
+									<td>cell1_3</td><td>cell2_3</td><td>cell3_3</td><td>cell4_3</td><td>cell5_3</td><td>cell6_3</td><td>cell7_3</td></tr>
+									<tr>
+									<td>cell1_4</td><td>cell2_4</td><td>cell3_4</td><td>cell4_4</td><td>cell5_4</td><td>cell6_4</td><td>cell7_4</td></tr>
+									</tbody>
+									</tr>
+									</table>
+							</div>
+				</fieldset>
+			</div>
+        </div>
+		<div id="footer" style="height: 130px; width: 100%; position: absolute; bottom: 0;"> </div>
+  </body>
+</html>

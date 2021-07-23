@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Criação de Personagem</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="slideShow.css" rel="stylesheet" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#header').load("header.html");
+				$('#footer').load("footer.html");
+			});
+		</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+		</style>
+  </head>
+  <body>		
+		<div id="header"></div>
+		<div id="Tormenta"></div>
+		<div class="pergaminho">
+			<div class="box">
+				<fieldset>
+					<legend>Raças</legend>
+					<div class="slide">
+						<div class="mySlides fade"></div>
+						<div class="mySlides fade"></div>
+						<div class="mySlides fade"></div>
+						<div class="mySlides fade"></div>
+						<div class="mySlides fade"></div>
+						<a class="prev" onclick="passSlideRace(-1)">&#10094;</a>
+						<a class="next" onclick="passSlideRace(1)">&#10095;</a>
+					</div>
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlideRace(1)"></span>
+						<span class="dot" onclick="currentSlideRace(2)"></span>
+						<span class="dot" onclick="currentSlideRace(3)"></span>
+						<span class="dot" onclick="currentSlideRace(4)"></span>
+						<span class="dot" onclick="currentSlideRace(5)"></span>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Classes</legend>
+					<div class="slide">
+						<div class="mySlides fade"></div>
+						<div class="mySlides fade"></div>
+						<div class="mySlides fade"></div>
+						<div class="mySlides fade"></div>
+						<div class="mySlides fade"></div>
+						<a class="prev" onclick="passSlideClass(-1)">&#10094;</a>
+						<a class="next" onclick="passSlideClass(1)">&#10095;</a>
+					</div>
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlideClass(1)"></span>
+						<span class="dot" onclick="currentSlideClass(2)"></span>
+						<span class="dot" onclick="currentSlideClass(3)"></span>
+						<span class="dot" onclick="currentSlideClass(4)"></span>
+						<span class="dot" onclick="currentSlideClass(5)"></span>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<div id="footer" style="height: 130px; width: 100%"></div>
+
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function passSlideRace(n) {
+				showSlides(slideIndex += n);
+			}
+			
+			function currentSlideRace(n) {
+				showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+			}
+		</script>
+  </body>
+</html>
