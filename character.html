@@ -6,7 +6,9 @@
     <title>Criação de Personagem</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 		<link href="slideShow.css" rel="stylesheet" type="text/css" />
+		<link href="shetStyle.css" rel="stylesheet" type="text/css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./scriptModal.js"></script>
 		<script>
 			$(document).ready(function(){
 				$('#header').load("header.html");
@@ -23,75 +25,339 @@
 		<div id="Tormenta"></div>
 		<div class="pergaminho">
 			<div class="box">
+				<br>
+				<fieldset>
+					<legend>É aqui que a sua aventura começa: </legend>
+					<p style="font-size:x-large;">O primeiro passo em uma aventura de RPG é a criação do personagem, para isso que existe essa página, auxiliar os jogadores a escolherem suas caracteríticas.
+						Independe da ordem, as principais escolhas que você deve fazer na sua ficha são: Raça, Classe e Origem. Para isso, logo a baixo, destacamos opções que você tem.
+						Para Origem o melhor é consultar.
+					</p>					
+				</fieldset>
 				<fieldset>
 					<legend>Raças</legend>
 					<div class="slide">
-						<div class="mySlides fade"></div>
-						<div class="mySlides fade"></div>
-						<div class="mySlides fade"></div>
-						<div class="mySlides fade"></div>
-						<div class="mySlides fade"></div>
-						<a class="prev" onclick="passSlideRace(-1)">&#10094;</a>
-						<a class="next" onclick="passSlideRace(1)">&#10095;</a>
+						<div class="slideRace fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1j2F4zpZ2JqF7HHYQ-KzoLu1G8WN-A__J" />
+							<center><h3>Humanos</h3></center>
+						</div>
+						<div class="slideRace fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1xeK6uEv_7UgPpah0Cn6Y5AGQzqrTkQfV" />
+							<center><h3>Anões</h3></center>
+						</div>
+						<div class="slideRace fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1Ofd6kwg2QwUo1lTdtnkZm6lg72gPGGdP" />
+							<center><h3>Dahllan</h3></center>
+						</div>
+						<div class="slideRace fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1BGj4R1YRelRez9VGM_Uf5ZPViFNwjMJ7" />
+							<center><h3>Elfos</h3></center>
+						</div>
+						<div class="slideRace fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1ithIMb8bQi4BCTG7iNOeepNt3bpT-VXe" />
+							<center><h3>Golem</h3></center>
+						</div>
+						<div class="slideRace fade">
+							<img class="SlideImg" style="width: 150px" src="https://drive.google.com/uc?export=view&id=11LEz4OII_YbgBZZPoDPp1YD7K_V-1A0_" />
+							<center><h3>Hynne</h3></center>
+						</div>
+						<div class="slideRace fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1g29gTeIpMgOun8E3D2JS2yA3vcDu27mW" />
+							<center><h3>Kliren</h3></center>
+						</div>
+						<div class="slideRace fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=17A8zU-d3dsqzeNfWRyLsUdvVWQMwimqp" />
+							<center><h3>Lefou</h3></center>
+						</div>
+						<div class="slideRace fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1liMUSpgzZ8tkmVZuOS8E7qTsx3WuHySJ" />
+							<center><h3>Medusa</h3></center>
+						</div>
+						<div class="slideRace fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1cNZDcgNMz3mOidkLE_sblybNa6K_GLtw" />
+							<center><h3>Minotauro</h3></center>
+						</div>
+						<div class="slideRace fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1dpjTul1XwXmNX3PP_jrDhfi4nyHS2Utq" />
+							<center><h3>Qareen</h3></center>
+						</div>
+						<div class="slideRace fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1KvkAbsZuijYQorNtPWB2u7DyDeDcb6N0" />
+							<center><h3>Silfide e Suraggel</h3></center>
+						</div>
+						<div class="slideRace fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1DJm0rQjJWpbhvAI5pfioNpb-Z6vL3cm7" />
+							<center><h3>Trog</h3></center>
+						</div>
+						<a class="prev" onclick="plusSlide(-1, 'Race')">&#10094;</a>
+						<a class="next" onclick="plusSlide(1, 'Race')">&#10095;</a>
 					</div>
 					<div style="text-align:center">
-						<span class="dot" onclick="currentSlideRace(1)"></span>
-						<span class="dot" onclick="currentSlideRace(2)"></span>
-						<span class="dot" onclick="currentSlideRace(3)"></span>
-						<span class="dot" onclick="currentSlideRace(4)"></span>
-						<span class="dot" onclick="currentSlideRace(5)"></span>
+						<span class="dotRace" onclick="currentSlide(1, 'Race')"></span>
+						<span class="dotRace" onclick="currentSlide(2, 'Race')"></span>
+						<span class="dotRace" onclick="currentSlide(3, 'Race')"></span>
+						<span class="dotRace" onclick="currentSlide(4, 'Race')"></span>
+						<span class="dotRace" onclick="currentSlide(5, 'Race')"></span>
+						<span class="dotRace" onclick="currentSlide(6, 'Race')"></span>
+						<span class="dotRace" onclick="currentSlide(7, 'Race')"></span>
+						<span class="dotRace" onclick="currentSlide(8, 'Race')"></span>
+						<span class="dotRace" onclick="currentSlide(9, 'Race')"></span>
+						<span class="dotRace" onclick="currentSlide(10, 'Race')"></span>
+						<span class="dotRace" onclick="currentSlide(11, 'Race')"></span>
+						<span class="dotRace" onclick="currentSlide(12, 'Race')"></span>
+						<span class="dotRace" onclick="currentSlide(13, 'Race')"></span>				
 					</div>
 				</fieldset>
 				<fieldset>
 					<legend>Classes</legend>
 					<div class="slide">
-						<div class="mySlides fade"></div>
-						<div class="mySlides fade"></div>
-						<div class="mySlides fade"></div>
-						<div class="mySlides fade"></div>
-						<div class="mySlides fade"></div>
-						<a class="prev" onclick="passSlideClass(-1)">&#10094;</a>
-						<a class="next" onclick="passSlideClass(1)">&#10095;</a>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1PPA9TSFWPdl8CGuqRUGvq6xm2cqgHKcv" />
+							<center><h3>Arcanista</h3></center>
+						</div>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1mM2XmL3zJPwsGDin5TTzGwi8UsB_6wjI" />
+							<center><h3>Barbaro</h3></center>
+						</div>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=14c1hY53WlGnfs6FjDOOv4VPKkUvWegB-" />
+							<center><h3>Bardo</h3></center>
+						</div>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1vPaj7-ZrIR69ghFZDGw7oBY7OlWwsLTn" />
+							<center><h3>Bucaneiro</h3></center>
+						</div>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=14JQOwBZ9I0emJt0doRC6T65CkAHXcdpO" />
+							<center><h3>Caçador</h3></center>
+						</div>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1NF9NlC0m6pgz4bqnrWywiDrk15ioZctP" />
+							<center><h3>Cavaleiro</h3></center>
+						</div>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1DKIjeUQPH7Yam2h_KpadT42_FqDhB9fE" />
+							<center><h3>Clérigo</h3></center>
+						</div>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1a8JQb6haeH8WGQ2cQLqXxmTVdzU3jWqw" />
+							<center><h3>Druida</h3></center>
+						</div>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1UfEbARNmQLj0jregEdGjQ03D27dRy3GX" />
+							<center><h3>Guerreiro</h3></center>
+						</div>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1K9XluqQ4ITqzDRxnYheOC1IjGl30vWdV" />
+							<center><h3>Invetor</h3></center>
+						</div>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1e9lyUoCRgcCgKSxPlD_WBmJs4eXqtaQY" />
+							<center><h3>Ladino</h3></center>
+						</div>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1Rij8V65_AS3jtxgrwxXjm8qYJYcuv9KB" />
+							<center><h3>Lutador</h3></center>
+						</div>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1iwsGaSBp7KTVSbWzW3toY19_4kosTojc" />
+							<center><h3>Nobre</h3></center>
+						</div>
+						<div class="slideClass fade">
+							<img class="SlideImg" src="https://drive.google.com/uc?export=view&id=1ido1G0U-y1oxTwNbvj0tiFTcVV7MNhFf" />
+							<center><h3>Paladino</h3></center>
+						</div>
+						<a class="prev" onclick="plusSlide(-1, 'Class')">&#10094;</a>
+						<a class="next" onclick="plusSlide(1, 'Class')">&#10095;</a>
 					</div>
 					<div style="text-align:center">
-						<span class="dot" onclick="currentSlideClass(1)"></span>
-						<span class="dot" onclick="currentSlideClass(2)"></span>
-						<span class="dot" onclick="currentSlideClass(3)"></span>
-						<span class="dot" onclick="currentSlideClass(4)"></span>
-						<span class="dot" onclick="currentSlideClass(5)"></span>
+						<span class="dotClass" onclick="currentSlide(1, 'Class')"></span>
+						<span class="dotClass" onclick="currentSlide(2, 'Class')"></span>
+						<span class="dotClass" onclick="currentSlide(3, 'Class')"></span>
+						<span class="dotClass" onclick="currentSlide(4, 'Class')"></span>
+						<span class="dotClass" onclick="currentSlide(5, 'Class')"></span>
+						<span class="dotClass" onclick="currentSlide(6, 'Class')"></span>
+						<span class="dotClass" onclick="currentSlide(7, 'Class')"></span>
+						<span class="dotClass" onclick="currentSlide(8, 'Class')"></span>
+						<span class="dotClass" onclick="currentSlide(9, 'Class')"></span>
+						<span class="dotClass" onclick="currentSlide(10, 'Class')"></span>
+						<span class="dotClass" onclick="currentSlide(11, 'Class')"></span>
+						<span class="dotClass" onclick="currentSlide(12, 'Class')"></span>
+						<span class="dotClass" onclick="currentSlide(13, 'Class')"></span>
+						<span class="dotClass" onclick="currentSlide(14, 'Class')"></span>
 					</div>
 				</fieldset>
+				<center>
+				<button onclick="openModal()" style="
+					position: relative; 
+					margin-bottom: 10px; 
+					border-radius: 10px;
+					color: white;
+					background-color: #85221e;
+					width: 80%;
+				">
+					<h3>CRIAR FICHA</h3>
+				</button>
+				</center>
+				<div id="shetModal" class="modal">
+					<div class="modal-content" style="width: 85%;">
+						<span onclick="closeModal()" class="close">&times;</span>
+						<div class="sheetContent">
+							<link href="shetStyle.css" rel="stylesheet" type="text/css" />
+							<form class="sheet">
+								<div class="content1">
+									<input class="fieldType1" placeholder="Personagem"/>
+									<input class="fieldType1" placeholder="Jogador"/>
+									<input class="fieldType1" placeholder="Raça"/>
+									<input class="fieldType1" placeholder="Origem"/>
+									<input class="fieldType1" placeholder="Classe"/>
+									<input class="fieldType1" id="level" placeholder="Nível" type="number" onchange="halfLevel(this.value)"/>
+								</div>
+								<div class="content2">
+									<div class="content3">
+										<div class="status">
+											<input class="fieldType2" placeholder="For" />
+											<input class="fieldType2" placeholder="Des" />
+											<input class="fieldType2" placeholder="Con" />
+											<input class="fieldType2" placeholder="Int" />
+											<input class="fieldType2" placeholder="Sab" />
+											<input class="fieldType2" placeholder="Car" />
+										</div>
+										<div class="pvpm">
+											<input class="fieldType1" placeholder="Pontos de Vida" />
+											<input class="fieldType1" placeholder="Pontos de Mana" />
+										</div>
+										<textarea class="fieldType3" placeholder="Ataques"></textarea>
+										<div class="CA">
+											<input class="fieldType2" placeholder="CA" />
+											<textarea class="fieldType3" placeholder="Somatório CA"></textarea>
+										</div>
+									</div>
+									<div class="content4">
+										<div class="expertise">
+											<p>Perícia</p>
+											<p>Total</p>
+											<p>1/2 Nível</p>
+											<p>Mod. Atrib</p>
+											<p>Treino</p>
+											<p>Outros</p>
+										</div>
+										<div class="expertise">
+											<p>Acrobacia</p>
+											<input class="fieldType2" type="number" />
+											<input class="half fieldType2" type="number" />
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number" />
+										</div>
+										<div class="expertise">
+											<p>Acrobacia</p>
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2 half" type="number"  />
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number" />
+										</div>
+										<div class="expertise">
+											<p>Acrobacia</p>
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2 half" type="number"  />
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number" />
+										</div>
+										<div class="expertise">
+											<p>Acrobacia</p>
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2 half" type="number"  />
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number" />
+										</div>
+										<div class="expertise">
+											<p>Acrobacia</p>
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2 half" type="number"  />
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number" />
+										</div>
+										<div class="expertise">
+											<p>Acrobacia</p>
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2 half" type="number"  />
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number" />
+										</div>
+										<div class="expertise">
+											<p>Acrobacia</p>
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2 half" type="number"  />
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number" />
+										</div>
+										<div class="expertise">
+											<p>Acrobacia</p>
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2 half" type="number"  />
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number" />
+										</div>
+										<div class="expertise">
+											<p>Acrobacia</p>
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2 half" type="number"  />
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number" />
+										</div>
+										<div class="expertise">
+											<p>Acrobacia</p>
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2 half" type="number"  />
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number" />
+										</div>
+										<div class="expertise">
+											<p>Acrobacia</p>
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2 half" type="number"  />
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number" />
+										</div>
+										<div class="expertise">
+											<p>Acrobacia</p>
+											<input class="fieldType2" type="number" />
+											<input class="fieldType2 half" type="number"  />
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number"/>
+											<input class="fieldType2" type="number" />
+										</div>
+										<div class="expertise"></div>
+										<div class="expertise"></div>
+										<div class="expertise"></div>
+										<div class="expertise"></div>
+										<div class="expertise"></div>
+										<div class="expertise"></div>
+										<div class="expertise"></div>
+										<div class="expertise"></div>
+										<div class="expertise"></div>
+										<div class="expertise"></div>
+										<div class="expertise"></div>
+										<div class="expertise"></div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="footer" style="height: 130px; width: 100%"></div>
-
-		<script>
-			var slideIndex = 1;
-			showSlides(slideIndex);
-			
-			function passSlideRace(n) {
-				showSlides(slideIndex += n);
-			}
-			
-			function currentSlideRace(n) {
-				showSlides(slideIndex = n);
-			}
-			
-			function showSlides(n) {
-				var i;
-				var slides = document.getElementsByClassName("mySlides");
-				var dots = document.getElementsByClassName("dot");
-				if (n > slides.length) {slideIndex = 1}    
-				if (n < 1) {slideIndex = slides.length}
-				for (i = 0; i < slides.length; i++) {
-						slides[i].style.display = "none";  
-				}
-				for (i = 0; i < dots.length; i++) {
-						dots[i].className = dots[i].className.replace(" active", "");
-				}
-				slides[slideIndex-1].style.display = "block";  
-				dots[slideIndex-1].className += " active";
-			}
-		</script>
+		<script type="text/javascript" src="./script.js"></script>
   </body>
 </html>

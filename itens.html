@@ -23,36 +23,217 @@
 		<div class="pergaminho">
 			<div class="box">
 				<fieldset>
-					<legend>Bem-vindo, Jovem Mestre!</legend>
+					<legend>Seja abençoado pelo Conhecimento!</legend>
+					<br>
+					<div style="display: grid; grid-template-columns: 50% 50%; max-width: 100%;	text-align: justify;"></div>          
+					<table class="redTable">
+						<thead>
+							<tr><th COLSPAN=7 sytle="text-align: center">Dano de Armas</th></tr>
+							<tr style="background-color: #85221E;">
+							<th>-2 Passos</th>
+							<th>-1 Passo</th>
+							<th>Normal</th>
+							<th>+1 Passo</th>
+							<th>+2 Passos</th>
+							<th>+3 Passos</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+							<td>1</td><td>1d2</td><td>1d3</td><td>1d4</td><td>1d6</td><td>1d8</td></tr>
+							<tr>
+							<td>1d2</td><td>1d3</td><td>1d4</td><td>1d6</td><td>1d8</td><td>1d10</td></tr>
+							<tr>
+							<td>1d4</td><td>1d6</td><td>1d8 ou 2d4</td><td>1d10</td><td>1d12</td><td>3d6</td></tr>
+							<tr>
+							<td>1d6</td><td>1d8</td><td>1d10</td><td>1d12</td><td>3d6</td><td>4d6</td></tr>
+							<tr>
+							<td>1d8</td><td>1d10</td><td>1d12, 2d6 ou 3d4</td><td>3d6</td><td>4d6</td><td>4d8</td></tr>
+							<tr>
+							<td>1d10</td><td>2d6</td><td>2d8</td><td>3d8</td><td>4d8</td><td>4d10</td></tr>
+							<tr>
+							<td>2d6</td><td>2d8</td><td>2d10</td><td>3d10</td><td>4d10</td><td>4d12</td></tr>
+						</table>
+						<br><br>
                     <div style="display: grid; grid-template-columns: 50% 50%; max-width: 100%;	text-align: justify;"></div>          
 					<table class="redTable">
 									<thead>
-									<tr>
-									<th>head1</th>
-									<th>head2</th>
-									<th>head3</th>
-									<th>head4</th>
-									<th>head5</th>
-									<th>head6</th>
-									<th>head7</th>
-									</tr>
-									</thead>
-									<tfoot>
-									<tr>
-									<td colspan="7">
-									<div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
-									</td>
-									</tr>
-									</tfoot>
-									<tbody>
-									<tr>
-									<td>cell1_1</td><td>cell2_1</td><td>cell3_1</td><td>cell4_1</td><td>cell5_1</td><td>cell6_1</td><td>cell7_1</td></tr>
-									<tr>
-									<td>cell1_2</td><td>cell2_2</td><td>cell3_2</td><td>cell4_2</td><td>cell5_2</td><td>cell6_2</td><td>cell7_2</td></tr>
-									<tr>
-									<td>cell1_3</td><td>cell2_3</td><td>cell3_3</td><td>cell4_3</td><td>cell5_3</td><td>cell6_3</td><td>cell7_3</td></tr>
-									<tr>
-									<td>cell1_4</td><td>cell2_4</td><td>cell3_4</td><td>cell4_4</td><td>cell5_4</td><td>cell6_4</td><td>cell7_4</td></tr>
+										<tr><th COLSPAN=7 sytle="text-align: center">Armas</th></tr>
+										<tr style="background-color: #85221E;">
+										<th>Armas Simples</th>
+										<th>Preço</th>
+										<th>Dano</th>
+										<th>Crítico</th>
+										<th>Alcance</th>
+										<th>Peso</th>
+										<th>Tipo</th>
+										</tr>
+										</thead>
+										<tfoot>
+										<tr>
+										<td colspan="7">
+										<div class="links"><a href="#pagina4">&laquo;</a> <a class="active" id="armas" href="#armas">Armas</a> <a id="armaduras" href="#armaduras">Armaduras e Escudos</a> <a id="itens" href="#itens">Itens e Serviços</a> <a href="#pagina1">&raquo;</a></div>
+										</td>
+										</tr>
+										</tfoot>
+										<tbody>
+										<tr><td COLSPAN=7 sytle="text-align: center"><Strong>Corpo a Corpo - Leve</Strong></td></tr>
+										<tr>
+										<td>Adaga</td><td>2</td><td>1d4</td><td>19</td><td>Curto</td><td>0,5Kg</td><td>Perfuração</td></tr>
+										<tr>
+										<td>Ataque desarmado</td><td>-</td><td>1d3</td><td>x2</td><td>-</td><td>-</td><td>Impacto</td></tr>
+										<tr>
+										<td>Espada Curta</td><td>10</td><td>1d6</td><td>19</td><td>-</td><td>1kg</td><td>Perfuração</td></tr>
+										<tr>
+										<td>Foice</td><td>4</td><td>1d6</td><td>x3</td><td>-</td><td>1Kg</td><td>Corte</td></tr>
+										<tr>
+										<td>Manopla</td><td>5</td><td>-</td><td>-</td><td>-</td><td>1Kg</td><td>Impacto</td></tr>
+
+										<tr><td COLSPAN=7 sytle="text-align: center"><Strong>Corpo a Corpo - Uma Mão</Strong></td></tr>
+										<tr>
+										<td>Clava</td><td>-</td><td>1d6</td><td>x2</td><td>-</td><td>1,5Kg</td><td>Impacto</td></tr>
+										<tr>
+										<td>Lança</td><td>2</td><td>1d6</td><td>x2</td><td>Curto</td><td>1,5Kg</td><td>Perfuração</td></tr>
+										<tr>
+										<td>Maça</td><td>12</td><td>1d8</td><td>x2</td><td>-</td><td>6kg</td><td>Impacto</td></tr>
+
+										<tr><td COLSPAN=7 sytle="text-align: center"><Strong>Cropo a Corpo - Duas Mãos</Strong></td></tr>
+										<tr>
+										<td>Bordão</td><td>-</td><td>1d6</td><td>x2</td><td>-</td><td>0,5Kg</td><td>Perfuração</td></tr>
+										<tr>
+										<td>Pique</td><td>2</td><td>1d8</td><td>x2</td><td>-</td><td>5kg</td><td>Perfuração</td></tr>
+										<tr>
+										<td>Tacape</td><td>-</td><td>1d10</td><td>x2</td><td>-</td><td>4kg</td><td>Impacto</td></tr>
+
+										<tr><td COLSPAN=7 sytle="text-align: center"><Strong>Ataque á Distância</Strong></td></tr>
+										<tr>
+										<td>Arco Curto</td><td>30</td><td>1d6</td><td>x3</td><td>Médio</td><td>1Kg</td><td>Perfuração</td></tr>
+										<tr style="text-align: right;">
+										<td>Flecha(20)</td><td>1</td><td>-</td><td>-</td><td>-</td><td>1,5kg</td><td>-</td></tr>
+										<tr>
+										<td>Besta Leve</td><td>35</td><td>1d8</td><td>19</td><td>Médio</td><td>3Kg</td><td>Perfuração</td></tr>
+										<tr style="text-align: right;">
+										<td>Virotes(20)</td><td>2</td><td>-</td><td>-</td><td>-</td><td>1Kg</td><td>-</td></tr>
+										<tr>
+										<td>Azagaia</td><td>1</td><td>1d6</td><td>x2</td><td>Médio</td><td>1kg</td><td>Perfuração</td></tr>
+										<tr>
+										<td>Funda</td><td>-</td><td>1d4</td><td>x2</td><td>Médio</td><td>250g</td><td>Impacto</td></tr>
+										<tr style="text-align: right;">
+										<td>Balas(20)</td><td>0,5</td><td>-</td><td>-</td><td>-</td><td>2Kg</td><td>-</td></tr>
+
+									<thead>
+										<tr>
+										<th>Armas Marciais</th>
+										<th>Preço</th>
+										<th>Dano</th>
+										<th>Crítico</th>
+										<th>Alcance</th>
+										<th>Peso</th>
+										<th>Tipo</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr><td COLSPAN=7 sytle="text-align: center"><Strong>Corpo a Corpo - Leve</Strong></td></tr>
+										<tr>
+										<td>Escudo Leve</td><td>5</td><td>1d4</td><td>x2</td><td>-</td><td>3Kg</td><td>Impacto</td></tr>
+										<tr>
+										<td>Machadinha</td><td>6</td><td>1d6</td><td>x3</td><td>Curto</td><td>2Kg</td><td>Corte</td></tr>
+	
+										<tr><td COLSPAN=7 sytle="text-align: center"><Strong>Corpo a Corpo - Uma Mão</Strong></td></tr>
+										<tr>
+										<td>Cimitarra</td><td>15</td><td>1d6</td><td>18</td><td>-</td><td>2Kg</td><td>Corte</td></tr>
+										<tr>
+										<td>Escudo Pesado</td><td>15</td><td>1d6</td><td>x2</td><td>Curto</td><td>7Kg</td><td>Impacto</td></tr>
+										<tr>
+										<td>Espada Longa</td><td>15</td><td>1d8</td><td>19</td><td>-</td><td>2kg</td><td>Corte</td></tr>
+										<tr>
+										<td>Florete</td><td>20</td><td>1d6</td><td>18</td><td>-</td><td>1Kg</td><td>Perfuração</td></tr>
+										<tr>
+										<td>Mahcado de Batalha</td><td>10</td><td>1d8</td><td>x3</td><td>-</td><td>3Kg</td><td>Corte</td></tr>
+										<tr>
+										<td>Mangual</td><td>8</td><td>1d8</td><td>x2</td><td>-</td><td>2,5kg</td><td>Impacto</td></tr>
+										<tr>
+										<td>Martelo de guerra</td><td>12</td><td>1d8</td><td>x3</td><td>-</td><td>2,5Kg</td><td>Impacto</td></tr>
+										<tr>
+										<td>Picareta</td><td>8</td><td>1d6</td><td>x4</td><td>-</td><td>3Kg</td><td>Perfuração</td></tr>
+										<tr>
+										<td>Tridente</td><td>15</td><td>1d8</td><td>x2</td><td>-</td><td>2kg</td><td>Perfuração</td></tr>
+	
+										<tr><td COLSPAN=7 sytle="text-align: center"><Strong>Cropo a Corpo - Duas Mãos</Strong></td></tr>
+										<tr>
+										<td>Albarda</td><td>10</td><td>1d10</td><td>x3</td><td>-</td><td>6Kg</td><td>Perfuração/Corte</td></tr>
+										<tr>
+										<td>Alfange</td><td>75</td><td>2d4</td><td>18</td><td>-</td><td>4kg</td><td>Corte</td></tr>
+										<tr>
+										<td>Gadanho</td><td>18</td><td>2d4</td><td>x4</td><td>-</td><td>5kg</td><td>Corte</td></tr>
+										<tr>
+										<td>Lança Montada</td><td>10</td><td>1d8</td><td>x3</td><td>-</td><td>5Kg</td><td>Perfuração</td></tr>
+										<tr>
+										<td>Machado de Guerra</td><td>20</td><td>1d12</td><td>x3</td><td>-</td><td>6kg</td><td>Corte</td></tr>
+										<tr>
+										<td>Montante</td><td>50</td><td>2d6</td><td>19</td><td>-</td><td>4kg</td><td>Corte</td></tr>
+	
+										<tr><td COLSPAN=7 sytle="text-align: center"><Strong>Ataque á Distância</Strong></td></tr>
+										<tr>
+										<td>Arco Longo</td><td>100</td><td>1d8</td><td>x3</td><td>Médio</td><td>1,5Kg</td><td>Perfuração</td></tr>
+										<tr style="text-align: right;">
+										<td>Flecha(20)</td><td>1</td><td>-</td><td>-</td><td>-</td><td>1,5kg</td><td>-</td></tr>
+										<tr>
+										<td>Besta Pesada</td><td>50</td><td>1d12</td><td>19</td><td>Médio</td><td>4Kg</td><td>Perfuração</td></tr>
+										<tr style="text-align: right;">
+										<td>Virotes(20)</td><td>2</td><td>-</td><td>-</td><td>-</td><td>1Kg</td><td>-</td></tr>
+										<tr>
+									<thead>
+										<tr>
+										<th>Armas Exóticas</th>
+										<th>Preço</th>
+										<th>Dano</th>
+										<th>Crítico</th>
+										<th>Alcance</th>
+										<th>Peso</th>
+										<th>Tipo</th>
+										</tr>
+										</thead>
+										<tbody>
+
+										<tr><td COLSPAN=7 sytle="text-align: center"><Strong>Corpo a Corpo - Uma Mão</Strong></td></tr>
+										<tr>
+										<td>Chicote</td><td>2</td><td>1d3</td><td>x2</td><td>-</td><td>1Kg</td><td>Corte</td></tr>
+										<tr>
+										<td>Espada Bastarda</td><td>35</td><td>1d10/1d12</td><td>19</td><td>-</td><td>3Kg</td><td>Corte</td></tr>
+										<tr>
+										<td>Katana</td><td>100</td><td>1d8/1d10</td><td>19</td><td>-</td><td>2,5kg</td><td>Corte</td></tr>
+										<tr>
+										<td>Machado anão</td><td>30</td><td>1d10</td><td>x3</td><td>-</td><td>4Kg</td><td>Corte</td></tr>
+											
+										<tr><td COLSPAN=7 sytle="text-align: center"><Strong>Cropo a Corpo - Duas Mãos</Strong></td></tr>
+										<tr>
+										<td>Corrente de espinhos</td><td>25</td><td>2d4/2d4</td><td>19</td><td>-</td><td>5Kg</td><td>Corte</td></tr>
+										<tr>
+										<td>Machado táurico</td><td>50</td><td>2d8</td><td>x3</td><td>-</td><td>12kg</td><td>Corte</td></tr>
+	
+										<tr><td COLSPAN=7 sytle="text-align: center"><Strong>Ataque á Distância</Strong></td></tr>
+										<tr>
+										<td>Rede</td><td>20</td><td>-</td><td>-</td><td>Curto</td><td>3Kg</td><td>-</td></tr>
+									<thead>
+										<tr>
+										<th>Armas de Fogo</th>
+										<th>Preço</th>
+										<th>Dano</th>
+										<th>Crítico</th>
+										<th>Alcance</th>
+										<th>Peso</th>
+										<th>Tipo</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr><td COLSPAN=7 sytle="text-align: center"><Strong>Ataque á Distância</Strong></td></tr>
+										<tr>
+										<td>Mosquete</td><td>500</td><td>2d8</td><td>19/x3</td><td>Médio</td><td>4Kg</td><td>Perfuração</td></tr>
+										<tr>
+										<td>Pistola</td><td>250</td><td>2d6</td><td>19/x3</td><td>Curto</td><td>1Kg</td><td>Perfuração</td></tr>
+										<tr style="text-align: right;">
+										<td>Munição</td><td>20</td><td>-</td><td>-</td><td>-</td><td>0,5Kg</td><td>-</td></tr>
 									</tbody>
 									</tr>
 									</table>
@@ -60,6 +241,6 @@
 				</fieldset>
 			</div>
         </div>
-		<div id="footer" style="height: 130px; width: 100%; position: absolute; bottom: 0;"> </div>
+		<div id="footer" style="height: 130px; width: 100%;"> </div>
   </body>
 </html>

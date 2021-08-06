@@ -1,3 +1,6 @@
+p {
+	font-size: large;
+}
 body {
 	font-family: 'Abhaya Libre', serif;
 	margin: 0;
@@ -20,8 +23,8 @@ legend {
 
 iframe {
 	border-radius: 25px;
-	height: 480px; 
-	width: 90%;
+	height: 400px;
+	width: 70%;
 }
 
 .cover {
@@ -106,7 +109,7 @@ iframe {
 
 .footer {
 	display: grid;
-	grid-template-columns: 250px 70%;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	position: relative;
 	height: 100%;
 	width: 100%;
@@ -119,33 +122,33 @@ iframe {
 }
 
 .aboutDevelopersRPG{
-	position: absolute;
-	right: 0;
+	position: relative;
 	padding: 20px;
-	width: 250px;
-	align-items: left;
-	margin-top: auto;
+	width: 100%;
+	text-align: right;
+	margin-top: 10px;
+	margin-left: -10%;
+	right: 0;
 }
 
 .aboutDevelopersSite {
-	position: absolute;
-	top: 20px;
+	position: relative;
 	left: 20px;
-	margin-top: auto;
+	margin-top: 15px;
 }
 
 .jamboLogo {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	right: 10px;
+	
+	height: 80px;
+	width: 80px;
+	
 }
 
 .jamboLogoYoutube {
-	position: absolute;
-	width: 130px;
+	
 	height: 80px;
-	right: 120px;
+	width: 90px;
+	
 }
 
 .pergaminho{
@@ -162,7 +165,7 @@ iframe {
 	border-radius: 10px;
 	min-width: 50%;
 	max-width: 1350px;
-	background-image: url("https://drive.google.com/uc?export=view&id=1h4zO2XGNb5QTQVcCHgsq79OSaplDkXvs");
+	background-image: url("https://drive.google.com/uc?export=view&id=1qQ7GKPEMFTLKWv3Tf9Y_w3ltv9UL70V_");
 	background-position: center;
 	background-repeat: repeat-y;
 	filter: drop-shadow(5px 5px 10px #000000);	
@@ -170,7 +173,7 @@ iframe {
 
 .aboutBook {
 	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	max-width: 100%;
 	text-align: justify;
 }
@@ -242,7 +245,7 @@ table.redTable {
   }
   table.redTable tbody td {
 	font-size: 13px;
-	color: #363636;
+	color: #000000;
   }
   table.redTable tr:nth-child(even) {
 	background: #FF726E;

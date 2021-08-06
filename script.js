@@ -1,20 +1,22 @@
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex, "Class");
+showSlides(slideIndex, "Race")
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlide(n, slideType) {
+  showSlides(slideIndex += n, slideType);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, slideType) {
+  showSlides(slideIndex = n, slideType);
 }
 
-function showSlides(n) {
+function showSlides(n, slideType) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  console.log("slide" + slideType);
+  var slides = document.getElementsByClassName("slide" + slideType);
+  var dots = document.getElementsByClassName("dot" + slideType);
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -26,3 +28,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+
+
+function halfLevel(level) {
+  console.log(level);
+  document.getElementsByClassName("half").value = Math.floor(level/2);
+}
+
